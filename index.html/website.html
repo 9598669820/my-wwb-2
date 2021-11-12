@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html knowladge</title>
+</head>
+<body>
+    <link rel="stylesheet" href="website.css">
+    <div class="header">
+        <!-- to develop login form -->
+        <button onclick=" document.getElementById('id01') .style.display='block' style="width:auto;">Login</button>
+        <div id="id01" class="model">
+            <form class="model-content animate" action="/action_page.php"methed="post">
+            <div class="imgcontainer">
+                <span onclick=" document.getElementById('id01').style.display='none'"class="close" title="close model">&times;</span>
+                <img src="vac1.jpg" alt="none" class="Avatar">
+            </div>
+            <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname"required>
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw"required>
+                <button type="submit">Login</button>  
+                <label>
+                    <input type="checkbox" checked="checked" name="remember">remember me
+                </label>
+            </div>
+            <div class="container" style="background-color: #f1f1f1;">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'"class="cancelbtn">Cancel</button>
+            <span class="psw">Forget <a href="#">Password</a></span>
+            </div>
+            </form>
+        </div>
+        <h1>Beautyful World</h1>
+        <p>Nature is nothing but God</p>
+    </div>
+    <div class="navbar">
+        <a href="#">home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Notice</a>
+        <input type="text" name="Search" id="Search" placeholder="SEARCH..." class="searchbar">
+
+    </div>
+    <div class="row">
+        <div class="side">
+            <h1>About me</h1>
+            <h4>This in mine photo</h4>
+            <img src="vac1.jpg" alt="Mohd Furkan" style="border-radius: 50%;">
+            <h2>Some more text </h2>
+            <p>In this corner you will be able to understand the value <br>
+            of creating a image bar</p>
+            <div class="fakeing" style="height: 60px;">Image</div><br>
+            <div class="fakeing" style="height: 60px;">Image</div><br>
+            <div class="fakeing" style="height: 60px;">Image</div><br>
+            <div class="fakeing" style="height: 60px;">Image</div>
+        </div>
+        <div class="main">..</div>
+    </div>
+    <script>
+        var model=document.getElementById('id01');
+        window.onclick= function(event){
+            if(event.target==model){
+                model.style.display="none";
+            }
+        }
+    </script>
+</body>
+</html>
